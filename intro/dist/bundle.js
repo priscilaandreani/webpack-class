@@ -1,0 +1,1 @@
+(()=>{"use strict";const o=function(o){console.log(`Olá, ${o}`)};console.log("mudamos a configuração"),o("Matheus"),o("Maria"),o("João")})();
