@@ -1,0 +1,15 @@
+$bgColor: aquamarine;
+$color: darkslategrey;
+$upper: uppercase;
+$borderRadius: 5px;
+
+body {
+  .btn {
+    background-color: $bgColor;
+    color: $color;
+    text-transform: $upper;
+    border-radius: $borderRadius;
+    padding: 0.5rem 1rem;
+    border: none;
+  }
+}
