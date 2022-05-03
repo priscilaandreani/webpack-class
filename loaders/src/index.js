@@ -4,6 +4,7 @@ import Button from './components/button.js'
 import warning from './templates/warning.html'
 import './templates/warning.css'
 import myDocument from './files/my-document.txt'
+import data from './files/data.json'
 
 const title = new Title()
 const image = new Image();
@@ -29,4 +30,9 @@ body.innerHTML += warning
 //import txt
 const txt = myDocument;
 console.log(txt)
-console.log(txt.toUpperCase()); 
+console.log(txt.toUpperCase());
+
+//import JSON
+const dataJson = data;
+body.innerHTML += JSON.stringify(dataJson)
+console.log(dataJson)
