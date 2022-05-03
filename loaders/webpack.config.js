@@ -27,11 +27,14 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['@babel/present-env'],
-            plugins: ['@babel/plugin-proposal-object-reest-spread']
+            presets: ['@babel/preset-env'],
+            plugins: ['@babel/plugin-proposal-object-rest-spread']
           }
         },
-      }
+      }, {
+        test: /\.html$/i,
+        loader: "html-loader",
+      },
     ]
   }
 }
