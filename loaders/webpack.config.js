@@ -21,6 +21,16 @@ module.exports = {
       {
         test: /\.(png|jpg|jpeg)$/,
         use: ['file-loader']
+      }, {
+        test: /.m?js$/,
+        exclude: /(node_modules)/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/present-env'],
+            plugins: ['@babel/plugin-proposal-object-reest-spread']
+          }
+        },
       }
     ]
   }
