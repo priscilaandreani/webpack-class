@@ -17,10 +17,6 @@ module.exports = {
       }, {
         test: /.scss$/,
         use: ['style-loader', 'css-loader', 'sass-loader']
-      },
-      {
-        test: /\.(png|jpg|jpeg)$/,
-        use: ['file-loader']
       }, {
         test: /.m?js$/,
         exclude: /(node_modules)/,
@@ -34,9 +30,6 @@ module.exports = {
       }, {
         test: /\.html$/i,
         loader: "html-loader",
-      }, {
-        test: /\.txt$/,
-        use: 'raw-loader'
       }
     ]
   }
