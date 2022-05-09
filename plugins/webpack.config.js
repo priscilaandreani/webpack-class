@@ -8,7 +8,7 @@ const path = require('path');
 module.exports = {
   entry: './src/index.js',
   output: {
-    filename: 'bundle.js',
+    filename: '[name].[contenthash].js',
     path: path.resolve(__dirname, 'dist'),
   },
   mode: 'development',
@@ -22,7 +22,7 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: 'styles.css',
+      filename: '[name].[contenthash].css',
     }),
     new webpack.DefinePlugin({
       VERSION: '1.02',
