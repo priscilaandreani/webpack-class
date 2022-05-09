@@ -1,6 +1,7 @@
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 const DotEnvPlugin = require('dotenv-webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack');
 const path = require('path');
 
@@ -28,6 +29,7 @@ module.exports = {
       PORT: 8080,
     }),
     new DotEnvPlugin(),
+    new HtmlWebpackPlugin(),
   ],
   optimization: {
     minimize: true,
