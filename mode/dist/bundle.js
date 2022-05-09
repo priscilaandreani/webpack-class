@@ -1,0 +1,1 @@
+(()=>{"use strict";const o=function(o,e){return o+e};console.log("teste de build");const e=o(1,2),n=o(20,30);console.log(e),console.log(n)})();
